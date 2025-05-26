@@ -172,7 +172,7 @@ describe('MessageApprovedProcessorService', () => {
     expect(firstEntry).toEqual({
       ...originalFirstEntry,
       retry: 1,
-      executeTxHash: '8d4112e355c9d2b59e6e80bb552e14fb0f9231e7aea12bf5e15ca59498944e70',
+      executeTxHash: 'c88655781e5d1908a6fc4b3efc46d2056870dfdfc38403988cd82cd2d346b723',
       updatedAt: expect.any(Date),
     });
 
@@ -247,7 +247,7 @@ describe('MessageApprovedProcessorService', () => {
     expect(firstEntry).toEqual({
       ...originalFirstEntry,
       retry: 2,
-      executeTxHash: '347a94a760aefcc674c0d13b9405ea2619bef2a326c04695b372f6e7d7df0426',
+      executeTxHash: 'c3c7ded4dd5fa11de3f0c9fcc8f4368435f6e112d12563afde1f788d414b670f',
       updatedAt: expect.any(Date),
     });
 
@@ -380,7 +380,7 @@ describe('MessageApprovedProcessorService', () => {
     );
     expect(firstEntry).toEqual({
       ...originalFirstEntry,
-      executeTxHash: '90d4f525856840a5c9c8115a30e87d823ac8261b298ca4ecb42f1b806fec363c',
+      executeTxHash: 'e39f6be7c74340deea8b89fa34a39220c2f19e64966df45e9b1bd9582109c649',
       retry: 3,
       updatedAt: expect.any(Date),
     });
@@ -513,7 +513,7 @@ describe('MessageApprovedProcessorService', () => {
       expect(itsExecuteOther).toEqual({
         ...originalItsExecuteOther,
         retry: 1,
-        executeTxHash: 'bf98d80b5850d39de84f3bcf128badf49546b0f03e366d9fe89b0bd321942619',
+        executeTxHash: '999ac03183b4aac45bd0c1fbccab3637a7fd2f4bbc275e7f4b7efcab3cc7e0de',
         updatedAt: expect.any(Date),
         successTimes: null,
       });
@@ -570,7 +570,7 @@ describe('MessageApprovedProcessorService', () => {
       expect(itsExecute).toEqual({
         ...originalItsExecute,
         retry: 1,
-        executeTxHash: '67b2b814e2ec9bdd08f57073f575ec95d160c76ec9ccd4d14395e7824b6b77cc',
+        executeTxHash: 'f2eb89f60c4d611823c9f221f3b0fcd2dc11b8ed01aa4c8c9e2908622779a2c5',
         updatedAt: expect.any(Date),
         successTimes: null,
       });
@@ -697,7 +697,7 @@ describe('MessageApprovedProcessorService', () => {
           'hex',
         ),
         availableGasBalance: '51200000000000000', // also contains 0.05 REWA for DCDT issue
-        executeTxHash: '67b2b814e2ec9bdd08f57073f575ec95d160c76ec9ccd4d14395e7824b6b77cc',
+        executeTxHash: 'f2eb89f60c4d611823c9f221f3b0fcd2dc11b8ed01aa4c8c9e2908622779a2c5',
         successTimes: 1,
       });
 
@@ -724,7 +724,7 @@ describe('MessageApprovedProcessorService', () => {
       expect(itsExecute).toEqual({
         ...originalItsExecute,
         retry: 1,
-        executeTxHash: '73887b17192ededfda3318bc824e0ea0594dd3b7b7e7251dadde36ca8dbaea17',
+        executeTxHash: 'cbc16f8dbd374740dd56b3aa420ff2edf83faa66c42297a5d084dd5171e03772',
         updatedAt: expect.any(Date),
         successTimes: 1,
       });
@@ -737,7 +737,7 @@ describe('MessageApprovedProcessorService', () => {
         sourceAddress: 'otherSourceAddress',
         payload: Buffer.from(AbiCoder.defaultAbiCoder().encode(['uint256'], [1]).substring(2), 'hex'),
         retry: 1,
-        executeTxHash: '67b2b814e2ec9bdd08f57073f575ec95d160c76ec9ccd4d14395e7824b6b77cc',
+        executeTxHash: 'f2eb89f60c4d611823c9f221f3b0fcd2dc11b8ed01aa4c8c9e2908622779a2c5',
         successTimes: 1,
         availableGasBalance: '1200000000000000', // not enough fee for paying 0.05 REWA for DCDT issue
         updatedAt: new Date(new Date().getTime() - 60_500),
