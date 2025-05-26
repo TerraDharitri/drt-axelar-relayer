@@ -676,7 +676,7 @@ describe('MessageApprovedProcessorService', () => {
       expect(itsExecute).toEqual({
         ...originalItsExecute,
         retry: 3,
-        executeTxHash: 'ef05047f045cc3769eaa31130ce1efa4c558367df7920327b57d9350ed123dfd',
+        executeTxHash: '349e9576884227a75ce0278cfcd657e125c493dedec2dd9d02bea76ec8435ecd',
         updatedAt: expect.any(Date),
         successTimes: 1,
       });
